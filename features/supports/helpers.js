@@ -4,6 +4,17 @@ async function asyncWait(secs) {
   });
 }
 
+async function loginUsingLine() {
+  // blah
+  // blah
+}
+
+async function takeScreenshot(driver, fileName) {
+
+}
+
 module.exports = {
-  asyncWait
+  asyncWait,
+  loginUsingLine,
+  takeScreenshot
 };

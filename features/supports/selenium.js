@@ -59,6 +59,11 @@ function setupDriver() {
         .build();
       break;
   }
+  driver.manage().setTimeouts({
+    implicit: 1 * 60 * 1000,
+    pageLoad: 1 * 60 * 1000,
+    script: 1 * 60 * 1000
+  });
   // theWorld.setSeleniumDriver(driver);
   // console.log(theWorld.driver);
   return driver;
